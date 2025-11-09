@@ -27,7 +27,16 @@ https://repo-default.voidlinux.org/live/current/void-rpi-armv7l-musl-20250202.im
 ### rpi-armv6l platform image
 https://repo-default.voidlinux.org/live/current/void-rpi-armv6l-musl-20250202.img.xz
 
+# FIRST INIT
+Check the IP of your device in our router
 
+Login with SSH 'ssh root@<IP_off_your_device>' or direct at your terminal.
+
+Default User is 'root' with default password 'voidlinux'
+
+First change the password with 'password'
+
+ 
 echo "repository=https://void-audiobox.github.io/xbps/aarch64-musl" | sudo tee /etc/xbps.d/void-audiobox.conf
 
 ## Update the repo
