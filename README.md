@@ -30,11 +30,11 @@ https://repo-default.voidlinux.org/live/current/void-rpi-armv6l-musl-20250202.im
 # FIRST INIT
 Check the IP of your device in our router
 
-Login with SSH 'ssh root@<IP_off_your_device>' or direct at your terminal.
+Login with SSH ' ssh root@<IP_off_your_device> ' or direct at your terminal.
 
-Default User is 'root' with default password 'voidlinux'
+Default User is ' root ' with default password ' voidlinux '
 
-First change the password with 'passwd'
+First change the password with ' passwd '
 
 Update the void OS
 
@@ -52,5 +52,21 @@ Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f
 
 ' xbps-install -S squeezelite '
 
+Search for output devive
 
+' squeezelite -l'
 
+Exsample for Pi500
+
+Output devices:
+  null                           - Discard all samples (playback) or generate zero samples (capture)
+  default                        - Default Audio Device
+  sysdefault                     - Default Audio Device
+  default:CARD=vc4hdmi0          - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+  sysdefault:CARD=vc4hdmi0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+  hdmi:CARD=vc4hdmi0,DEV=0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - HDMI Audio Output
+  default:CARD=vc4hdmi1          - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+  sysdefault:CARD=vc4hdmi1       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+  hdmi:CARD=vc4hdmi1,DEV=0       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - HDMI Audio Output
+
+' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" '
