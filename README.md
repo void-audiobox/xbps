@@ -40,9 +40,9 @@ Update the void OS
 
 ' xbps-install -Suy xbps '
 
-Import this repo
- 
-' echo "repository=https://void-audiobox.github.io/xbps/aarch64-musl" | sudo tee /etc/xbps.d/void-audiobox.conf '
+Import this repo for your $ARCH [aarch64-musl , armv7l-musl , armv6l-musl , x86_64-musl]
+
+' echo "repository=https://void-audiobox.github.io/xbps/$ARCH" | sudo tee /etc/xbps.d/void-audiobox.conf '
 
 ' xbps-install -Suy '
 
