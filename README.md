@@ -59,14 +59,26 @@ Search for output devive
 Exsample for Pi500
 
 Output devices:
+
   null                           - Discard all samples (playback) or generate zero samples (capture)
+
   default                        - Default Audio Device
+
   sysdefault                     - Default Audio Device
+
   default:CARD=vc4hdmi0          - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+
   sysdefault:CARD=vc4hdmi0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+
   hdmi:CARD=vc4hdmi0,DEV=0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - HDMI Audio Output
+
   default:CARD=vc4hdmi1          - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+
   sysdefault:CARD=vc4hdmi1       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+
   hdmi:CARD=vc4hdmi1,DEV=0       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - HDMI Audio Output
 
-' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" '
+Start your squeezelite in the terminal and look at your LMS (Lyrion Media Server) to control the player
+
+' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s <LMServer>[:<port>] '
+
