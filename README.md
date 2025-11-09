@@ -56,13 +56,13 @@ Search for output devive
 
 ' squeezelite -l'
 
-Exsample for Pi500
+Example for Pi500
 
 Output devices:
 
-  null                           - Discard all samples (playback) or generate zero samples (capture)
+  - null                           - Discard all samples (playback) or generate zero samples (capture)
 
-  default                        - Default Audio Device
+  - default                        - Default Audio Device
 
   sysdefault                     - Default Audio Device
 
