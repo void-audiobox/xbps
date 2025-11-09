@@ -80,5 +80,5 @@ Output devices:
 
 Start your squeezelite in the terminal and look at your LMS (Lyrion Media Server) to control the player
 
-' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s LMServer:<port> '
+' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s LMServer:port '
 
