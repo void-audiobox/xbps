@@ -30,21 +30,22 @@ https://repo-default.voidlinux.org/live/current/void-rpi-armv6l-musl-20250202.im
 # FIRST INIT
 Check the IP of your device in our router
 
-Login with SSH ' ssh root@<IP_off_your_device> ' or direct at your terminal.
+Login with SSH or direct at your terminal
+    ssh root@<IP_off_your_device>
 
 Default User is ' root ' with default password ' voidlinux '
 
-First change the password with ' passwd '
+First change the password with 
+    passwd
 
 Update the void OS
 
-' xbps-install -Suy xbps '
+    xbps-install -Suy xbps
 
 Import this repo for your $ARCH [aarch64-musl , armv7l-musl , armv6l-musl , x86_64-musl]
 
-' echo "repository=https://void-audiobox.github.io/xbps/$ARCH" | sudo tee /etc/xbps.d/void-audiobox.conf '
-
-' xbps-install -Suy '
+    echo "repository=https://void-audiobox.github.io/xbps/$ARCH" | sudo tee /etc/xbps.d/void-audiobox.conf
+    xbps-install -Suy 
 
 Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f:52:b3:25:79
 
@@ -62,27 +63,15 @@ Example for Pi500
 
     null                           - Discard all samples (playback) or generate zero samples (capture)
     default                        - Default Audio Device
-
-  - sysdefault                     - Default Audio Device
-
-  - default:CARD=vc4hdmi0          - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
-
-  - sysdefault:CARD=vc4hdmi0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
-
-  - hdmi:CARD=vc4hdmi0,DEV=0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - HDMI Audio Output
-
-  - default:CARD=vc4hdmi1          - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
-
-  - sysdefault:CARD=vc4hdmi1       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
-
-  - hdmi:CARD=vc4hdmi1,DEV=0       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - HDMI Audio Output
+    sysdefault                     - Default Audio Device
+    default:CARD=vc4hdmi0          - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+    sysdefault:CARD=vc4hdmi0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - Default Audio Device
+    hdmi:CARD=vc4hdmi0,DEV=0       - vc4-hdmi-0, MAI PCM i2s-hifi-0 - HDMI Audio Output
+    default:CARD=vc4hdmi1          - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+    sysdefault:CARD=vc4hdmi1       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - Default Audio Device
+    hdmi:CARD=vc4hdmi1,DEV=0       - vc4-hdmi-1, MAI PCM i2s-hifi-0 - HDMI Audio Output
 
 Start your squeezelite in the terminal and look at your LMS (Lyrion Media Server) to control the player
 
-' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s LMServer:port '
+    squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s LMServer:port
 
-#### Service status
-    sv status /var/service/*
-    sv status ntpd
-    
-aa
