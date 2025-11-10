@@ -82,3 +82,8 @@ Start your squeezelite in the terminal and look at your LMS (Lyrion Media Server
 
 ' squeezelite -o "hdmi:CARD=vc4hdmi0,DEV=0" -s LMServer:port '
 
+#### Service status
+    sv status /var/service/*
+    sv status ntpd
+    
+aa
