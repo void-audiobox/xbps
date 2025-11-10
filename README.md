@@ -9,23 +9,23 @@ Thanks to all the cracks from LYRION COMMUNITY https://forums.lyrion.org
 
 and ralph-irving for the code https://github.com/ralph-irving/squeezelite
 
-# INSTALL the OS
+## INSTALL the OS
 
 This repository is for void-linux-musl linux. Please download for your ARCH:
 
 #### x86_64 live iso
 https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20250202-base.iso
 
-### rpi-aarch64 platform image
+#### rpi-aarch64 platform image
 https://repo-default.voidlinux.org/live/current/void-rpi-aarch64-musl-20250202.img.xz
 
-### rpi-armv7l platform image
+#### rpi-armv7l platform image
 https://repo-default.voidlinux.org/live/current/void-rpi-armv7l-musl-20250202.img.xz
 
-### rpi-armv6l platform image
+#### rpi-armv6l platform image
 https://repo-default.voidlinux.org/live/current/void-rpi-armv6l-musl-20250202.img.xz
 
-# FIRST INIT
+## FIRST INIT
 Check the IP of your device in our router
 
 Login with SSH or direct at your terminal
@@ -46,7 +46,7 @@ Import this repo for your $ARCH [aarch64-musl , armv7l-musl , armv6l-musl , x86_
     xbps-install -Suy 
     Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f:52:b3:25:79
 
-## Install the squeezelite package
+#### Install the squeezelite package
 
     xbps-install -S squeezelite
 
