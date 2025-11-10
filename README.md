@@ -1,8 +1,8 @@
 # !!! !!! IN PROGRESS !!! !!!
 
 # void-audiobox
- Publish Voidlinux XBPS repo (multi-arch) for squeezelite AudioBox player
- This repo support the ARCH x86_64 and ARM aarch64 / armv7l / armv6l
+  Publish Voidlinux XBPS repo (multi-arch) for squeezelite AudioBox player
+  This repo support the ARCH x86_64 and ARM aarch64 / armv7l / armv6l
 
 Thanks to all the cracks from LYRION COMMUNITY https://forums.lyrion.org
 
