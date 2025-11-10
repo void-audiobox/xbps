@@ -31,17 +31,13 @@ Check the IP of your device in our router
 Login with SSH or direct at your terminal
     ssh root@<IP_off_your_device>
 
-Default User is ' root ' with default password ' voidlinux '
-
-First change the password with 
+Default User is ' root ' with default password ' voidlinux '. First change the password with 
     passwd
 
 Update the void OS
-
     xbps-install -Suy xbps
 
 Import this repo for your $ARCH [aarch64-musl , armv7l-musl , armv6l-musl , x86_64-musl]
-
     echo "repository=https://void-audiobox.github.io/xbps/$ARCH" | sudo tee /etc/xbps.d/void-audiobox.conf
     xbps-install -Suy 
     Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f:52:b3:25:79
