@@ -1,9 +1,8 @@
 # !!! !!! IN PROGRESS !!! !!!
 
 # void-audiobox
-Publish Voidlinux XBPS repo (multi-arch) for squeezelite AudioBox player
-
-This repo support the ARCH x86_64 and ARM aarch64 / armv7l / armv6l
+ Publish Voidlinux XBPS repo (multi-arch) for squeezelite AudioBox player
+ This repo support the ARCH x86_64 and ARM aarch64 / armv7l / armv6l
 
 Thanks to all the cracks from LYRION COMMUNITY https://forums.lyrion.org
 
@@ -46,8 +45,7 @@ Import this repo for your $ARCH [aarch64-musl , armv7l-musl , armv6l-musl , x86_
 
     echo "repository=https://void-audiobox.github.io/xbps/$ARCH" | sudo tee /etc/xbps.d/void-audiobox.conf
     xbps-install -Suy 
-
-Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f:52:b3:25:79
+    Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f:52:b3:25:79
 
 ## Install the squeezelite package
 
