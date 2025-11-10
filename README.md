@@ -50,7 +50,7 @@ Please type ' Y ' to import the Fingerprint: 04:5b:56:1d:be:6a:69:f7:d6:a2:cf:2f
 
 ## Install the squeezelite package
 
-' xbps-install -S squeezelite '
+    xbps-install -S squeezelite
 
 Search for output devive
 
