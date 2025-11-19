@@ -11,10 +11,7 @@ and ralph-irving for the code https://github.com/ralph-irving/squeezelite
 
 ## INSTALL the OS
 
-This repository is for void-linux-musl linux. Please download for your ARCH:
-
-#### x86_64 live iso
-https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20250202-base.iso
+This repository is for void-linux-musl linux only for RaspberryPi's. Please download for your ARCH:
 
 #### rpi-aarch64 platform image
 https://repo-default.voidlinux.org/live/current/void-rpi-aarch64-musl-20250202.img.xz
